@@ -1,112 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jagapriyan | Cybersecurity Portfolio</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jagapriyan | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <nav>
+        <div class="logo">Jagapriyan<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- NAVBAR -->
-<nav>
-  <h2 class="logo">Jagapriyan</h2>
+    <!-- HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Jagapriyan</span></h1>
+            <p class="subtitle">Aspiring Software Engineer | Problem Solver | Innovator</p>
+            <div class="info">
+                <p><strong>Email:</strong> jagapriyan023@gmail.com</p>
+                <p><strong>Phone:</strong> +91 99520 99473</p>
+                <p><strong>Location:</strong> Thanjavur, India</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="assets/Jagapriyan_Resume.pdf" class="btn-secondary" download>Download CV</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a class="btn" href="resume.pdf" download>Download CV</a>
-  </div>
-</nav>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">NodeJS</div>
+            <div class="skill-card">Kali Linux</div>
+            <div class="skill-card">Cisco Packet Tracer</div>
+        </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AI Powered Deadlock Detection</h3>
+            <p>Developed an intelligent deadlock detection system using graph-based modeling, real-time Tkinter visualization, and heuristic recovery strategies with Python, Flask, and NetworkX.</p>
+            <span class="tag">Python · Flask · HTML/CSS · JSON</span>
+        </div>
+        <div class="project">
+            <h3>AI Chatbot</h3>
+            <p>Built a modular chatbot system using Flask and REST APIs for efficient message processing, caching, and dynamic response generation.</p>
+            <span class="tag">Python · Flask · REST API</span>
+        </div>
+    </section>
 
-<!-- HERO -->
-<section class="hero fade">
-  <h1>Cybersecurity & Python Developer</h1>
-  <p>
-    Building secure systems • Automation • Intelligent tools
-  </p>
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Cloud Computing - NPTEL (May 2025)</li>
+            <li>Data Structures & Algorithms - iamneo (Dec 2024)</li>
+            <li>Java Programming - iamneo (Dec 2024)</li>
+        </ul>
+    </section>
 
-  <div class="hero-buttons">
-    <a href="resume.pdf" class="btn" download>⬇ Download Resume</a>
-    <a href="#projects" class="outline">View Projects</a>
-  </div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:jagapriyan023@gmail.com">jagapriyan023@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/jaga023" target="_blank">github.com/jaga023</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jagapriyanva1409" target="_blank">linkedin.com/in/jagapriyanva1409</a></p>
+            <p><strong>Phone:</strong> +91 99520 99473</p>
+        </div>
+    </section>
 
-
-<!-- ABOUT -->
-<section id="about" class="fade">
-  <div class="glass">
-    <h2>About Me</h2>
-    <p>
-      I'm Jagapriyan, a Computer Science student passionate about cybersecurity,
-      system design, and building intelligent Python applications.
-      I love solving complex problems and developing secure solutions.
-    </p>
-  </div>
-</section>
-
-
-<!-- SKILLS -->
-<section id="skills" class="fade">
-  <h2>Skills</h2>
-
-  <div class="grid">
-
-    <div class="card">C / C++ / Java / Python</div>
-    <div class="card">HTML / CSS / NodeJS / Flutter</div>
-    <div class="card">Kali Linux / Networking / Packet Tracer</div>
-    <div class="card">Problem Solving / Teamwork</div>
-
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="fade">
-  <h2>Projects</h2>
-
-  <div class="projects">
-
-    <div class="project-card">
-      <img src="deadlock.png">
-      <h3>Deadlock Detection System</h3>
-      <p>Graph based detection with Tkinter GUI and visualization.</p>
-      <a href="https://github.com/jaga023">View Code</a>
-    </div>
-
-    <div class="project-card">
-      <img src="chatbot.png">
-      <h3>AI Chatbot</h3>
-      <p>Flask REST API chatbot with secure session management.</p>
-      <a href="https://github.com/jaga023">View Code</a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="fade">
-  <div class="glass center">
-    <h2>Contact Me</h2>
-    <p>Email: jagapriyan023@gmail.com</p>
-    <p>GitHub: github.com/jaga023</p>
-    <p>LinkedIn: jagapriyanva1409</p>
-  </div>
-</section>
-
-
-<footer>
-  © 2026 Jagapriyan
-</footer>
-
-<script src="script.js"></script>
-
+    <footer>
+        <p>© 2026 Jagapriyan | Designed with ❤️ and creativity.</p>
+    </footer>
 </body>
 </html>
